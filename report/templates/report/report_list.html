@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Reports</title>
+  </head>
+  <body>
+    <h1>Reports</h1>
+    <ul>
+        {% for report in object_list %}
+            <li>{{ report.category }} - {{ report.author }} - {{ report.location }} - {{ report.status }} - 
+                {{ report.update_date }} - {{ report.creation_date }}</li>
+            {% empty %}
+            <li>No reports yet.</li>
+        {% endfor %}
+    </ul>
+  </body>
+</html>
