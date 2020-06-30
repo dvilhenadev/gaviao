@@ -28,7 +28,7 @@ class ReportAPITestCase(APITestCase):
         user_count = User.objects.count()
         self.assertEqual(user_count, 1)
         
-    def test_singe_report(self):
+    def test_single_report(self):
         report_count = Report.objects.count()
         self.assertEqual(report_count, 1)
 
