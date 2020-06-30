@@ -101,6 +101,7 @@ Os seguintes endpoints foram testados com os métodos especificados:
 Exemplos de queries:
 -   <http://127.0.0.1:8000/api/report/?a=admin> - GET, retorna todas as ocorrências que contenham 'admin' no campo `author`
 -   <http://127.0.0.1:8000/api/report/?c=weather> - GET, retorna todas as ocorrências que contenham 'weather' no campo `category`
+-   <http://127.0.0.1:8000/api/report/?l=sintra> - GET, retorna todas as ocorrências que contenham 'sintra' no campo `location`
 
 É também possível juntar queries:
 
@@ -112,5 +113,5 @@ Exemplos de queries:
 # ToDo
 
 - Localização com base em PostGIS ou Spatialite
-- Query de localização
+- Query de localização com PogstGIS
 - Mostrar mapa com ocorrências
