@@ -95,16 +95,16 @@ O campo `update_date` é atualizado com a data e hora do momento de atualizaçã
 
 Os seguintes endpoints foram testados com os métodos especificados:
 
-   <http://127.0.0.1:8000/api/report/> - GET, POST
-   <http://127.0.0.1:8000/api/report/1> - GET
+-   <http://127.0.0.1:8000/api/report/> - GET, POST
+-   <http://127.0.0.1:8000/api/report/1> - GET
 
 Exemplos de queries:
-   <http://127.0.0.1:8000/api/report/?a=admin> - GET, retorna todas as ocorrências que contenham 'admin' no campo `author`
-   <http://127.0.0.1:8000/api/report/?c=weather> - GET, retorna todas as ocorrências que contenham 'weather' no campo `category`
+-   <http://127.0.0.1:8000/api/report/?a=admin> - GET, retorna todas as ocorrências que contenham 'admin' no campo `author`
+-   <http://127.0.0.1:8000/api/report/?c=weather> - GET, retorna todas as ocorrências que contenham 'weather' no campo `category`
 
 É também possível juntar queries:
 
-   <http://127.0.0.1:8000/api/report/?c=weather&a=admin> - GET
+-   <http://127.0.0.1:8000/api/report/?c=weather&a=admin> - GET
 
 
 
