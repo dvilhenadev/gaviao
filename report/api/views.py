@@ -23,7 +23,11 @@ class ReportAPIView(mixins.CreateModelMixin, generics.ListAPIView):
 
         category_query = self.request.query_params.get('c', None)
         if category_query is not None:
-            qs = qs.filter(category__icontains=category_query).distinct()  
+            qs = qs.filter(category__icontains=category_query).distinct()
+
+        location_query = self.request.query_params.get('l', None)
+        if location_query is not None:
+            qs = qs.filter(location__icontains=location_query).distinct()  
 
         # TODO Location query      
         
