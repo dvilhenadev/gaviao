@@ -113,5 +113,5 @@ Exemplos de queries:
 # ToDo
 
 - Localização com base em PostGIS ou Spatialite
-- Query de localização com PogstGIS
+- Query de localização com PostGIS
 - Mostrar mapa com ocorrências
